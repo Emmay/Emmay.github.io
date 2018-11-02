@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(../img/galaxy.jpg);
+  }
+  h1{
+    font-family:'Creepster', cursive;
+    font-size:2.5rem;
+  }
+  .wrapper {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1em;
+      display: flex;
+      flex-flow: row nowrap;
+      background-color: #EFB106;
+  }
+  p, [for="abtype"] {
+      margin-bottom: 0;
+      margin-top: 2rem;
+  }
+  section {
+      flex-basis: 57%;
+      margin-right: 10%;
+  }
+  aside {
+      flex-basis: 33%;
+  }
+
+  fieldset{
+      border:2px solid gray;
+      margin: 1rem;
+      border-radius:2rem;
+  }
+
+  legend{
+      font-family:'Creepster', cursive;
+      font-size: 1.5rem;
+  }
+
+  label{
+      display:block;
+      margin:0.2rem;
+      padding-bottom:0.3rem;
+  }
+
+  textarea{
+      height: 10rem;
+      padding:1rem;
+  }
+
+  select{
+      font-size:1rem;
+  }
+
+  button{
+      font-size: 1rem;
+      border:1px solid white;
+      border-radius: 1rem;
+      background-color: #BB342F;
+      color: white;
+      padding:0.5rem 1rem;
+  }
+
+  button:hover{
+      background:greenyellow;
+      color: black;
+      cursor:pointer;
+  }
+
+  input:not([type="radio"]):not([type="checkbox"]), textarea{
+      display:block;
+      margin-bottom: 1.5rem;
+      width:20rem;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      padding: 0 1rem;
+      border-radius:1rem;
+  }
+
+
+
+
