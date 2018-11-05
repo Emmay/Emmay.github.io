@@ -1,0 +1,105 @@
+body{
+   /* background-image: url(../7.jpg);
+    background-size: 100%; */
+    background: #78BE97;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0B476D;
+}
+h1{
+    font-size:3rem;
+}
+h1, h2{
+    font-family: 'Bungee Shade', cursive;
+    text-align:center;
+    background: #398689;
+    color: #CEF19E;
+    border-radius:1rem;
+}
+
+a{
+    color: #CEF19E;
+}
+a:hover{
+    background: #CEF19E;
+    color: #0B476D;
+}
+.facts{
+    float:right;
+    padding:0;
+}
+.summary{
+    text-align:center;
+}
+
+.photo-row{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+div.polaroid {
+    width: 50%;
+    background-color: #CEF19E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:25px;
+    flex-basis: 50%;
+  }
+  
+.quiltblurb{
+    text-align:center;
+    padding:5px 20px;
+}
+
+.polaroid img{
+    width:100%;
+    height:100%;
+}
+
+nav{
+    font-family: 'Bungee';
+    font-size: 1.5rem;
+    border-top: 2px solid  #398689;
+    border-bottom: 2px solid  #398689;
+    margin: 10px 0 10px 0;
+    text-align:center;
+}
+nav li{
+    list-style-type: none;
+    display:inline-block;
+    background: #398689;
+    border-radius: 0.75rem;
+    margin: 0 1rem 0 1rem;
+}
+nav a{
+    text-decoration:none;
+    color:#CEF19E;
+    border-radius: 0.75rem;
+    display:block;
+    padding:0.75rem;
+}
+section:after, .reactive:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.homepage{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+}
+
+.professional{
+    display:flex;
+    flex-flow:row nowrap;   
+}
+.reactive{
+    margin-right:25px;
+}
+.reactive img{
+    float:left;
+}
+iframe{
+    margin:10px;
+}
