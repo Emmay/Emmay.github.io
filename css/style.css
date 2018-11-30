@@ -1,6 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
-   /* background-image: url(../7.jpg);
-    background-size: 100%; */
     background: #78BE97;
     font-family: Arial, Helvetica, sans-serif;
     color: #0B476D;
@@ -16,39 +18,34 @@ h1, h2{
     border-radius:1rem;
 }
 
-a{
-    color: #CEF19E;
-}
 a:hover{
     background: #CEF19E;
     color: #0B476D;
 }
-.facts{
-    float:right;
-    padding:0;
-}
+
 .summary{
     text-align:center;
 }
 
-.photo-row{
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:space-between;
-    align-items: center;
-}
-
-div.polaroid {
-    width: 50%;
+.polaroid {
+    display:none;
+    max-height:100%;
+    max-width:600px;
     background-color: #CEF19E;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin:25px;
-    flex-basis: 50%;
-  }
-  
+    position: center;
+}
+.active{
+    display:block;
+}
+
+.photo-gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .quiltblurb{
     text-align:center;
-    padding:5px 20px;
 }
 
 .polaroid img{
@@ -56,9 +53,47 @@ div.polaroid {
     height:100%;
 }
 
+.btn-left{
+    border:none;
+    border-radius:1rem;
+    background-color: #398689;
+    position:absolute;
+    top:60%;
+    left:8rem;
+    font-family: 'Bungee Shade', cursive;
+    font-size:5rem;
+    color:#CEF19E;
+}
+
+.btn-right{
+    border:none;
+    border-radius:1rem;
+    background-color: #398689;
+    position:absolute;
+    top:60%;
+    right:8rem;
+    font-family: 'Bungee Shade', cursive;
+    font-size:5rem;
+    color:#CEF19E;
+}
+
+.btn-right:hover, .btn-left:hover{
+    background: #CEF19E;
+    color: #0B476D;
+    border:2px solid  #398689;
+    cursor: pointer;
+}
+
+button:disabled, button:disabled:hover{
+    background-color: #777;
+    color: #CEF19E;
+    cursor:not-allowed;
+    border:none;
+}
+/* NAVIGATION BAR STYLING */
 nav{
     font-family: 'Bungee';
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border-top: 2px solid  #398689;
     border-bottom: 2px solid  #398689;
     margin: 10px 0 10px 0;
@@ -78,6 +113,7 @@ nav a{
     display:block;
     padding:0.75rem;
 }
+
 section:after, .reactive:after {
     content: "";
     display: table;
